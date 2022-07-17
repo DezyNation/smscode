@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% block title %}Lesson Planner{% endblock title %}
+{% block headername %}Lesson Planner{% endblock headername %}
+
+{% block maincontent %}
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Grade-wise Lesson Progress</h3>
+        </div>
+        
+        <div class="card-body">
+            <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                <div class="row"><div class="col-sm-12 col-md-6">
+                    <div class="dt-buttons btn-group flex-wrap">
+                        <button class="btn btn-secondary buttons-copy buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>Copy</span></button>
+                        <button class="btn btn-secondary buttons-csv buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>CSV</span></button>
+                        <button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>Excel</span></button>
+                        <button class="btn btn-secondary buttons-pdf buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>PDF</span></button>
+                        <button class="btn btn-secondary buttons-print" tabindex="0" aria-controls="example1" type="button"><span>Print</span></button>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary buttons-collection dropdown-toggle buttons-colvis" tabindex="0" aria-controls="example1" type="button" aria-haspopup="true" aria-expanded="false"><span>Column visibility</span><span class="dt-down-arrow"></span></button>
+                        </div> 
+                    </div>                    
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    <table id="example1" class="table table-bordered table-striped dataTable dtr-inline" role="grid" aria-describedby="example1_info">
+                    <thead>
+                    <tr role="row">
+                        <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Grade</th>
+                        <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column descending">Semester 1</th>
+                        <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">Semester 2</th>
+                        <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="">Overall Completion</th>
+                        <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="">Incharge</th>
+                        <th class="actions" tabindex="0" aria-controls="example1" rowspan="1" colspan="3" aria-label="Actions" style="">Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="odd">
+                            <td class="dtr-control sorting_1" tabindex="0">1</td>
+                            <td>56%</td>
+                            <td>0%</td>
+                            <td style="">56%</td>
+                            <td style="">Poonam Jaiswal</td>
+                            <td style="">
+                                <a href="lessonplan/view"><button type="button" class="btn btn-block rounded-pill btn-primary"><i class="fas fa-eye"></i>&nbsp;&nbsp;View</button></a>                            </td>
+                            <td style="">
+                                <button type="button" class="btn btn-block rounded-pill btn-success"><i class="fas fa-edit"></i>&nbsp;&nbsp;Change Incharge</button>&nbsp;&nbsp;
+                            </td>
+                        </tr>
+
+                        
+                        <tr class="odd">
+                            <td class="dtr-control sorting_1" tabindex="0">2</td>
+                            <td>56%</td>
+                            <td>0%</td>
+                            <td style="">56%</td>
+                            <td style="">Poonam Jaiswal</td>
+                            <td style="">
+                                <a href="lessonplan/view"><button type="button" class="btn btn-block rounded-pill btn-primary"><i class="fas fa-eye"></i>&nbsp;&nbsp;View</button></a>
+                            </td>
+                            <td style="">
+                                <button type="button" class="btn btn-block rounded-pill btn-success"><i class="fas fa-edit"></i>&nbsp;&nbsp;Change Incharge</button>&nbsp;&nbsp;
+                            </td>
+                        </tr>
+
+                        <tr class="odd">
+                            <td class="dtr-control sorting_1" tabindex="0">3</td>
+                            <td>56%</td>
+                            <td>0%</td>
+                            <td style="">56%</td>
+                            <td style="">Poonam Jaiswal</td>
+                            <td style="">
+                                <a href="lessonplan/view"><button type="button" class="btn btn-block rounded-pill btn-primary"><i class="fas fa-eye"></i>&nbsp;&nbsp;View</button></a>                            </td>
+                            <td style="">
+                                <button type="button" class="btn btn-block rounded-pill btn-success"><i class="fas fa-edit"></i>&nbsp;&nbsp;Change Incharge</button>&nbsp;&nbsp;
+                            </td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th rowspan="1" colspan="1">Grade</th>
+                            <th rowspan="1" colspan="1">Semester 1</th>
+                            <th rowspan="1" colspan="1">Semester 2</th>
+                            <th rowspan="1" colspan="1">Overall Completion</th>
+                            <th rowspan="1" colspan="1">Incharge</th>
+                        </tr>
+                    </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+  </div><!-- /.container-fluid -->
+  <a href="#" class="rounded-circle add-btn blue-gradient"><h2 class="mb-0">+</h2></a>
+  {% endblock maincontent %}

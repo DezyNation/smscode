@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% block title %}Management{% endblock title %}
+{% block headername %}Management Controls{% endblock headername %}
+
+{% block maincontent %}
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Exams Management for <strong>Grade 1</strong></h3>
+        </div>
+        
+        <div class="card-body">
+            <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                <div class="row"><div class="col-sm-12 col-md-6">
+                    <div class="dt-buttons btn-group flex-wrap">
+                        <button class="btn btn-secondary buttons-copy buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>Copy</span></button>
+                        <button class="btn btn-secondary buttons-csv buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>CSV</span></button>
+                        <button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>Excel</span></button>
+                        <button class="btn btn-secondary buttons-pdf buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>PDF</span></button>
+                        <button class="btn btn-secondary buttons-print" tabindex="0" aria-controls="example1" type="button"><span>Print</span></button>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary buttons-collection dropdown-toggle buttons-colvis" tabindex="0" aria-controls="example1" type="button" aria-haspopup="true" aria-expanded="false"><span>Column visibility</span><span class="dt-down-arrow"></span></button>
+                        </div> 
+                    </div>                    
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    <table id="example1" class="table table-bordered table-striped dataTable dtr-inline" role="grid" aria-describedby="example1_info">
+                    <thead>
+                    <tr role="row">
+                        <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Exam ID</th>
+                        <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column descending">Exam Type</th>
+                        <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">Start Date</th>
+                        <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="">End Date</th>
+                        <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="">Subjects</th>
+                        <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="">Candidates</th>
+                        <th class="actions" tabindex="0" aria-controls="example1" rowspan="1" colspan="3" aria-label="Actions" style="">Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="odd">
+                            <td class="dtr-control sorting_1" tabindex="0">01</td>
+                            <td>Improvement</td>
+                            <td>24-02-2022</td>
+                            <td style="">18-04-2022</td>
+                            <td style="">English, Maths, Physics</td>
+                            <td style="">8/240</td>
+                            <td colspan="3" class="d-flex flex-row align-center justify-content-around">
+                                <a href="#"><button type="button" class="btn rounded-circle btn-primary" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-eye"></i></button></a>
+                                <a href="#"><button type="button" class="btn rounded-circle btn-success" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-bullhorn"></i></button></a>
+                                <a href="#"><button type="button" class="btn rounded-circle btn-danger" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-trash"></i></button></a>
+                            </td>
+                        </tr>
+
+                        
+                        <tr class="odd">
+                            <td class="dtr-control sorting_1" tabindex="0">02</td>
+                            <td>End Semester</td>
+                            <td>24-02-2022</td>
+                            <td style="">18-04-2022</td>
+                            <td style="">English, Maths, Physics</td>
+                            <td style="">238/240</td>
+                            <td colspan="3" class="d-flex flex-row align-center justify-content-around">
+                                <a href="#"><button type="button" class="btn rounded-circle btn-primary" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-eye"></i></button></a>
+                                <a href="#"><button type="button" class="btn rounded-circle btn-success" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-bullhorn"></i></button></a>
+                                <a href="#"><button type="button" class="btn rounded-circle btn-danger" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-trash"></i></button></a>
+                            </td>
+                        </tr>
+
+                        <tr class="odd">
+                            <td class="dtr-control sorting_1" tabindex="0">03</td>
+                            <td>Revision</td>
+                            <td>24-02-2022</td>
+                            <td style="">18-04-2022</td>
+                            <td style="">English, Maths, Physics, Chemistry</td>
+                            <td style="">240/240</td>
+                            <td colspan="3" class="d-flex flex-row align-center justify-content-around">
+                                <a href="#"><button type="button" class="btn rounded-circle btn-primary" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-eye"></i></button></a>
+                                <a href="#"><button type="button" class="btn rounded-circle btn-success" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-bullhorn"></i></button></a>
+                                <a href="#"><button type="button" class="btn rounded-circle btn-danger" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-trash"></i></button></a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th rowspan="1" colspan="1">Exam ID</th>
+                            <th rowspan="1" colspan="1">Start Date</th>
+                            <th rowspan="1" colspan="1">End Date</th>
+                            <th rowspan="1" colspan="1">Subjects</th>
+                            <th rowspan="1" colspan="1">Candidates</th>
+                        </tr>
+                    </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+  </div><!-- /.container-fluid -->
+  <a href="#" class="rounded-circle add-btn"><h2 class="mb-0">+</h2></a>
+  {% endblock maincontent %}

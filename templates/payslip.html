@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Payroll{% endblock title %}
+{% block headername %}Manage Salaries{% endblock headername %}
+
+{% block maincontent %}
+<div class="container-fluid">
+    <div class="card-header card-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="example1" class="table table-bordered table-striped dataTable dtr-inline" role="grid" aria-describedby="example1_info">
+                <thead>
+                <tr role="row">
+                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Name</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column descending">Role</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">Mobile</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="">Email</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="">Joining Date</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="">Salary (₹)</th>
+                    <th class="actions" tabindex="0" aria-controls="example1" rowspan="1" colspan="2" aria-label="Actions" style="">Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="bg-white">
+                        <td>Sangam Kumar</td>
+                        <td>Incharge</td>
+                        <td>7838074742</td>
+                        <td style="">sangam@dezynation.com</td>
+                        <td style="">07-04-2021</td>
+                        <td style="">38000</td>
+                        <td colspan="2" class="d-flex flex-row align-center justify-content-around">
+                            <a href="lessonplan/view"><button type="button" class="btn rounded-circle btn-primary" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-edit"></i></button></a>
+                            <a href="#"><button type="button" class="btn rounded-circle btn-danger" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-trash"></i></button></a>
+                        </td>
+                    </tr>
+
+                    <tr class="bg-white">
+                        <td>Sangam Kumar</td>
+                        <td>Incharge</td>
+                        <td>7838074742</td>
+                        <td style="">sangam@dezynation.com</td>
+                        <td style="">07-04-2021</td>
+                        <td style="">38000</td>
+                        <td colspan="2" class="d-flex flex-row align-center justify-content-around">
+                            <a href="lessonplan/view"><button type="button" class="btn rounded-circle btn-primary" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-edit"></i></button></a>
+                            <a href="#"><button type="button" class="btn rounded-circle btn-danger" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-trash"></i></button></a>
+                        </td>
+                    </tr>
+
+                    <tr class="bg-white">
+                        <td>Sangam Kumar</td>
+                        <td>Incharge</td>
+                        <td>7838074742</td>
+                        <td style="">sangam@dezynation.com</td>
+                        <td style="">07-04-2021</td>
+                        <td style="">38000</td>
+                        <td colspan="2" class="d-flex flex-row align-center justify-content-around">
+                            <a href="lessonplan/view"><button type="button" class="btn rounded-circle btn-primary" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-edit"></i></button></a>
+                            <a href="#"><button type="button" class="btn rounded-circle btn-danger" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-trash"></i></button></a>
+                        </td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th rowspan="1" colspan="1">Name</th>
+                        <th rowspan="1" colspan="1">Role</th>
+                        <th rowspan="1" colspan="1">Mobile</th>
+                        <th rowspan="1" colspan="1">Email</th>
+                        <th rowspan="1" colspan="1">Joining Date</th>
+                    </tr>
+                </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#" class="rounded-circle add-btn blue-gradient"><h2 class="mb-0">+</h2></a>
+{% endblock maincontent %}

@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Users{% endblock title %}
+{% block headername %}Users{% endblock headername %}
+
+{% block maincontent %}
+<div class="conatiner-fluid">
+    <div class="card-header">
+        <h3 class="card-title">Users under your control</h3>
+    </div>
+    
+    <div class="row py-2">
+
+        
+        <div class="col-md-4">
+            <div class="card card-widget widget-user-2">
+                <a href="users/userdata" class="widget-user-header bg-warning">
+                    <div class="widget-user-image">
+                        <img class="img-circle elevation-2" src="{% static 'img/user7-128x128.jpg' %}" alt="User Avatar">
+                    </div>
+        
+                    <h3 class="widget-user-username">Sneha Singh</h3>
+                    <h5 class="widget-user-desc">Physics</h5>
+                </a>
+                <div class="card-footer p-0 bg-white">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Projects <span class="float-right badge bg-primary">31</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Tasks <span class="float-right badge bg-info">5</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Completed Projects <span class="float-right badge bg-success">12</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Students <span class="float-right badge bg-danger">842</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>   
+            </div>
+        </div>
+
+        
+        <div class="col-md-4">
+            <div class="card card-widget widget-user-2">
+                <a href="users/userdata" class="widget-user-header bg-warning">
+                    <div class="widget-user-image">
+                        <img class="img-circle elevation-2" src="{% static 'img/user7-128x128.jpg' %}" alt="User Avatar">
+                    </div>
+        
+                    <h3 class="widget-user-username">Ronit Kapoor</h3>
+                    <h5 class="widget-user-desc">English</h5>
+                </a>
+                <div class="card-footer p-0 bg-white">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Projects <span class="float-right badge bg-primary">31</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Tasks <span class="float-right badge bg-info">5</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Completed Projects <span class="float-right badge bg-success">12</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Students <span class="float-right badge bg-danger">842</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>   
+            </div>
+        </div>
+
+        
+        <div class="col-md-4">
+            <div class="card card-widget widget-user-2">
+                <a href="users/userdata" class="widget-user-header bg-warning">
+                    <div class="widget-user-image">
+                        <img class="img-circle elevation-2" src="{% static 'img/user7-128x128.jpg' %}" alt="User Avatar">
+                    </div>
+        
+                    <h3 class="widget-user-username">Tulsi Kapoor</h3>
+                    <h5 class="widget-user-desc">Sanskrit</h5>
+                </a>
+                <div class="card-footer p-0 bg-white">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Projects <span class="float-right badge bg-primary">31</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Tasks <span class="float-right badge bg-info">5</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Completed Projects <span class="float-right badge bg-success">12</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Students <span class="float-right badge bg-danger">842</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>   
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<a href="#" class="rounded-circle add-btn blue-gradient"><h2 class="mb-0">+</h2></a>
+{% endblock maincontent %}

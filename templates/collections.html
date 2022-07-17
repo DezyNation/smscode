@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Collections{% endblock title %}
+{% block headername %}Manage Collections{% endblock headername %}
+
+{% block maincontent %}
+<div class="container-fluid">
+    <div class="card-header card-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="example1" class="table table-bordered table-striped dataTable dtr-inline" role="grid" aria-describedby="example1_info">
+                <thead>
+                <tr role="row">
+                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Name</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column descending">Role</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="">Email</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="">Amount (₹)</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="">Type</th>
+                    <th class="actions" tabindex="0" aria-controls="example1" rowspan="1" colspan="2" aria-label="Actions" style="">Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="bg-white">
+                        <td>Sangam Kumar</td>
+                        <td>Incharge</td>
+                        <td style="">sangam@dezynation.com</td>
+                        <td style="">18000</td>
+                        <td style="">Fees</td>
+                        <td colspan="2" class="d-flex flex-row align-center justify-content-around">
+                            <a href="../grades/sections"><button type="button" class="btn rounded-circle btn-primary" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-eye"></i></button></a>
+                            <a href="lessonplan/view"><button type="button" class="btn rounded-circle btn-warning" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-edit"></i></button></a>
+                            <a href="#"><button type="button" class="btn rounded-circle btn-danger" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-trash"></i></button></a>
+                        </td>
+                    </tr>
+
+                    <tr class="bg-white">
+                        <td>Sangam Kumar</td>
+                        <td>Incharge</td>
+                        <td style="">sangam@dezynation.com</td>
+                        <td style="">3600</td>
+                        <td style="">Picnic</td>
+                        <td colspan="2" class="d-flex flex-row align-center justify-content-around">
+                            <a href="../grades/sections"><button type="button" class="btn rounded-circle btn-primary" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-eye"></i></button></a>
+                            <a href="lessonplan/view"><button type="button" class="btn rounded-circle btn-warning" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-edit"></i></button></a>
+                            <a href="#"><button type="button" class="btn rounded-circle btn-danger" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-trash"></i></button></a>
+                        </td>
+                    </tr>
+
+                    <tr class="bg-white">
+                        <td>Sangam Kumar</td>
+                        <td>Incharge</td>
+                        <td style="">sangam@dezynation.com</td>
+                        <td style="">500</td>
+                        <td style="">Penalty</td>
+                        <td colspan="2" class="d-flex flex-row align-center justify-content-around">
+                            <a href="../grades/sections"><button type="button" class="btn rounded-circle btn-primary" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-eye"></i></button></a>
+                            <a href="lessonplan/view"><button type="button" class="btn rounded-circle btn-warning" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-edit"></i></button></a>
+                            <a href="#"><button type="button" class="btn rounded-circle btn-danger" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-trash"></i></button></a>
+                        </td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th rowspan="1" colspan="1">Name</th>
+                        <th rowspan="1" colspan="1">Role</th>
+                        <th rowspan="1" colspan="1">Email</th>
+                        <th rowspan="1" colspan="1">Amount</th>
+                        <th rowspan="1" colspan="1">Type</th>
+                    </tr>
+                </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="p-4">
+            <h3 class="card-title"><strong>Collection Types</strong></h3>
+        </div>
+        <div class="card-header card-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <table id="example1" class="table table-bordered table-striped dataTable dtr-inline" role="grid" aria-describedby="example1_info">
+                    <thead>
+                    <tr role="row">
+                        <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">S. No.</th>
+                        <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column descending">Collection Name</th>
+                        <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column descending">Amount</th>
+                        <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">Recurring (Y/N)</th>
+                        <th class="actions" tabindex="0" aria-controls="example1" rowspan="1" colspan="3" aria-label="Actions" style="">Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="bg-white">
+                            <td>1</td>
+                            <td>Tution Fees</td>
+                            <td>2000 - 7500</td>
+                            <td style="">Y</td>
+                            <td colspan="2" class="d-flex flex-row align-center justify-content-around">
+                                <a href="../grades/sections"><button type="button" class="btn rounded-circle btn-primary" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-eye"></i></button></a>
+                                <a href="#"><button type="button" class="btn rounded-circle btn-warning" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-edit"></i></button></a>
+                                <a href="#"><button type="button" class="btn rounded-circle btn-danger" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-trash"></i></button></a>
+                            </td>
+                        </tr>
+
+                        <tr class="bg-white">
+                            <td>2</td>
+                            <td>Lab Fees</td>
+                            <td style="">800 - 3200</td>
+                            <td style="">Y</td>
+                            <td colspan="2" class="d-flex flex-row align-center justify-content-around">
+                                <a href="../grades/sections"><button type="button" class="btn rounded-circle btn-primary" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-eye"></i></button></a>
+                                <a href="#"><button type="button" class="btn rounded-circle btn-warning" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-edit"></i></button></a>
+                                <a href="#"><button type="button" class="btn rounded-circle btn-danger" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-trash"></i></button></a>
+                            </td>
+                        </tr>
+
+                        <tr class="bg-white">
+                            <td>3</td>
+                            <td>Penalty</td>
+                            <td style="">150</td>
+                            <td style="">N</td>
+                            <td colspan="2" class="d-flex flex-row align-center justify-content-around">
+                                <a href="../grades/sections"><button type="button" class="btn rounded-circle btn-primary" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-eye"></i></button></a>
+                                <a href="#"><button type="button" class="btn rounded-circle btn-warning" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-edit"></i></button></a>
+                                <a href="#"><button type="button" class="btn rounded-circle btn-danger" style="width: 36px; height: 36px; display: grid; place-content: center;"><i class="fas fa-trash"></i></button></a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th rowspan="1" colspan="1">S. No.</th>
+                            <th rowspan="1" colspan="1">Collection Name</th>
+                            <th rowspan="1" colspan="1">Amount</th>
+                            <th rowspan="1" colspan="1">Recurring (Y/N)</th>
+                        </tr>
+                    </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a href="#" class="rounded-circle add-btn">
+  <h2 class="mb-0">+</h2>        
+  <div class="sub-menu bg-white">
+      <div class="sub-menu--item"><p class="mb-0">Add Collection</p></div>
+      <div class="sub-menu--item"><p class="mb-0">New Collection Type</p></div>
+  </div>
+</a>
+{% endblock maincontent %}

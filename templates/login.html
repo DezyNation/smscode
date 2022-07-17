@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenzyDash | Login</title>
+
+    <link rel="stylesheet" href="{% static '/css/auth.css' %}">
+</head>
+<body>
+    <section id="auth-section">
+        <div class="large">
+            <img src="{% static 'img/authimg.png' %}" alt="EduLec" class="auth-img">
+        </div>
+        <div class="small">
+            <form action="#" method="POST" class="auth-form">
+                {% csrf_token %}
+                <h1 class="form-title">Login</h1>
+                <div class="form-column">
+                    <label for="icode">Institution Code</label>
+                    <input type="text" name="icode" id="icode" placeholder="Your Institution Code">
+                </div>
+                <div class="form-column">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Your Username">
+                </div>
+                <div class="form-column">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Your Password">
+                </div>
+                <a href="#" class="auth-submit">Login</a>
+                <a href="#" class="forgot-password-link">Forgot Password? Reset here</a>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

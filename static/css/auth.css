@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*, ::after, ::before{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+#auth-section{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.large, .small{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.large{
+    width: 60%;
+}
+.small{
+    width: 40%;
+}
+
+
+.large .auth-img{
+    width: 35vw;
+    height: auto;
+}
+
+
+
+.small .auth-form{
+    position: relative;
+    width: 32vw;
+    height: 85vh;
+    padding: 6vh 3vw;
+    background: #FAFAFA;
+    border: 1px solid #EEEEEE;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.auth-form .form-title{
+    position: relative;
+    font-size: 2vw;
+    margin: 2vh 0 0;
+}
+.auth-form .form-column{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 2vh auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+label{
+    margin-bottom: 1vh;
+    color: darkslategray;
+    font-size: .9vw;
+}
+input{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1.6vh .6vw;
+    border-radius: 8px;
+    border: 1px solid #D1D5DB;
+    outline: none;
+    background: #FFF;
+    color: darkslategray;
+    font-size: .9vw;
+}
+
+.auth-form p{
+    width: 100%;
+}
+
+
+.auth-submit{
+    position: relative;
+    width: 100%;
+    padding: 1.5vh;
+    display: grid;
+    place-content: center;
+    background: #1C80DD;
+    color: #FFF;
+    font-size: 1vw;
+    font-weight: 500;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.auth-submit:hover{
+    background: blue;
+}
+
+.forgot-password-link{
+    font-size: 1.125vw;
+    text-align: center;
+    font-weight: 500;
+    color: #1C80DD;
+    align-self: center;
+}

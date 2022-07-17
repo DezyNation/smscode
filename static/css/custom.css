@@ -1,0 +1,76 @@
+.blue-gradient{
+    background: linear-gradient(-90deg, navy, rgb(0, 0, 90)) !important;
+}
+
+.add-btn{
+    position: fixed; 
+    bottom: 2rem; 
+    right: 2rem; 
+    width: 54px; 
+    height: 54px; 
+    display: grid; 
+    place-content: center;
+    border: none;
+    background: blue;
+    color: #FFF !important;
+    font-weight: 400;
+    z-index: 50;
+    transition: all .3s ease;
+}
+.add-btn h2{
+    font-size: 2.25rem;
+}
+.add-btn:hover{
+    background: red;
+}
+
+.sub-menu{
+    position: fixed;
+    bottom: 2rem;
+    right: -25vw;
+    width: 240px;
+    height: auto;
+    border-radius: 12px;
+    display: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.add-btn:hover .sub-menu{
+    right: 2rem;
+}
+.sub-menu--item{
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+    color: darkslategray;
+    transition: all .3s ease;
+}
+.sub-menu--item:hover{
+    background: blue;
+    color: #FFF;
+}
+
+
+.log-out{
+    cursor: pointer;
+}
+.log-out-btn{
+    position: relative;
+    margin-top: 5vh;
+    padding-left: 1rem;
+    background: none;
+    color: rgb(235, 205, 178);
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start !important;
+}
+.log-out-btn i{
+    margin-right: 1rem;
+}
