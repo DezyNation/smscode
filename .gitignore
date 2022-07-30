@@ -1,5 +1,4 @@
 # created by virtualenv automatically
 Scripts/
 pyvenv.cfg
-Lib/
 db.sqlite3
